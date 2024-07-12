@@ -11,6 +11,9 @@ jobs:
     name: Create cards
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20"
       - uses: TranLam2004/ORG_STAT@release
         with:
           orgname: "TickLabVN"
