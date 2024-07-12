@@ -11,7 +11,7 @@ jobs:
     name: Create cards
     steps:
       - uses: actions/checkout@v2
-      - uses: TranLam2004/org-metrics-ticklab-challenge@v.0.0.1
+      - uses: TranLam2004/ORG_STAT@release
         with:
           orgname: "TickLabVN"
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
