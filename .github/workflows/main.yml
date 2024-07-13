@@ -11,12 +11,5 @@ jobs:
     name: Create cards
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - uses: ThaiNguyenGiaBao/PNG/blob/main/getData@v1
-        with:
-          org-name: "TickLabVN"
-          token: ${{ secrets.PERSONAL_TOKEN }}
-        env:
-          token: ${{ secrets.PERSONAL_TOKEN }}
+
+
