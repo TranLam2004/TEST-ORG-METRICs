@@ -14,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - uses: TranLam2004/ORG_STAT@main
+      - uses: ThaiNguyenGiaBao/PNG@v1
         with:
-          orgname: "TickLabVN"
-          TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          org-name: "TickLabVN"
+          token: ${{ secrets.PERSONAL_TOKEN }}
         env:
-          TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.PERSONAL_TOKEN }}
