@@ -5,26 +5,13 @@ on:
     - cron: "* */24 * * *"
   workflow_dispatch:
 
-permissions:
-  contents: write
 jobs:
-  update-readme:
+  build:
     runs-on: ubuntu-latest
-
+    name: Create cards
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "20"
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run
-        uses: TranLam2004/ORG_STAT@v1
+      - uses: actions/checkout@v4
+      - uses: TranLam2004/ORG_STAT@v1
         with:
           orgname: "TickLabVN"
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
